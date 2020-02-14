@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+    <menu>
+        <add id="LA_TestModule::parent" title="Test Module" module="LA_TestModule" sortOrder="100"
+             resource="LA_TestModule::parent" parent="Magento_Catalog::catalog"/>
+        <add id="LA_TestModule::import" title="Import" module="LA_TestModule" sortOrder="10"
+             action="testmodule/import/index" resource="LA_TestModule::index" parent="LA_TestModule::parent"/>
+    </menu>
+</config>

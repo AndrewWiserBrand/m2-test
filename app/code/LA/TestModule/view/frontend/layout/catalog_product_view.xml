@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="product.info.details">
+            <block ifconfig="laproductpage/custom_html/show_in_tab" class="Magento\Catalog\Block\Product\View"
+                   name="la.customhtml.tab" template="LA_TestModule::product/customhtml.phtml" group="detailed_info">
+                <arguments>
+                    <argument translate="true" name="title" xsi:type="string">Custom Html Tab</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+        <referenceBlock name="product.info.form.options">
+            <block ifconfig="laproductpage/custom_html/show_in_container2" class="Magento\Catalog\Block\Product\View"
+                   name="la.customhtml.block" after="-" template="LA_TestModule::product/customhtml.phtml"/>
+        </referenceBlock>
+    </body>
+</page>

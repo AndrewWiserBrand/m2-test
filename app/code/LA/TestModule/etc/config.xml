@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <laproductpage>
+            <custom_html>
+                <show_in_tab>0</show_in_tab>
+                <show_in_container2>1</show_in_container2>
+            </custom_html>
+        </laproductpage>
+    </default>
+</config>
